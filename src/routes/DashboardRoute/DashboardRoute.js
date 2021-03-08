@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import './DashboardRoute.css';
 
 class DashboardRoute extends Component {
   render() {
     return (
-      <section>
+      <section className='beginPractice'>
         <h2>Italian</h2>
         <button type='button' className='startPractice'>Start Practicing</button>
         <h3>Words to Practice</h3>

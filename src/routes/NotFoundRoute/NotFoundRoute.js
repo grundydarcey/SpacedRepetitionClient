@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './NotFoundRoute.css';
 
 class NotFoundRoute extends Component {
   render() {

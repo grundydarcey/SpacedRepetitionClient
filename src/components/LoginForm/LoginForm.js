@@ -52,7 +52,7 @@ class LoginForm extends Component {
         </div>
         <div>
           <Label htmlFor='login-username-input'>
-            Username
+            Username: 
           </Label>
           <Input
             ref={this.firstInput}
@@ -60,10 +60,10 @@ class LoginForm extends Component {
             name='username'
             required
           />
-        </div>
+        </div><br />
         <div>
           <Label htmlFor='login-password-input'>
-            Password
+            Password:   
           </Label>
           <Input
             id='login-password-input'
@@ -71,7 +71,7 @@ class LoginForm extends Component {
             type='password'
             required
           />
-        </div>
+        </div><br />
         <Button type='submit'>
           Login
         </Button>

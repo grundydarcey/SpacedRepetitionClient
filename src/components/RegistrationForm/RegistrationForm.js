@@ -56,7 +56,7 @@ class RegistrationForm extends Component {
             name='name'
             required
           />
-        </div>
+        </div><br />
         <div>
           <Label htmlFor='registration-username-input'>
             Choose a username<Required />
@@ -66,7 +66,7 @@ class RegistrationForm extends Component {
             name='username'
             required
           />
-        </div>
+        </div><br />
         <div>
           <Label htmlFor='registration-password-input'>
             Choose a password<Required />
@@ -77,11 +77,11 @@ class RegistrationForm extends Component {
             type='password'
             required
           />
-        </div>
+        </div><br />
         <footer>
           <Button type='submit'>
             Sign up
-          </Button>
+          </Button><br /><br />
           {' '}
           <Link to='/login'>Already have an account?</Link>
         </footer>
