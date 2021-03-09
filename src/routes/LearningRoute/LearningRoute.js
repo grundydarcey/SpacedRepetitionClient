@@ -15,7 +15,7 @@ class LearningRoute extends Component {
     )
 
     return (
-      <section>
+      <section className='learn'>
         <h2>Translate the word: (word to translate)</h2>
         <form>
           <legend>Guess below</legend>

@@ -1,0 +1,18 @@
+fieldset {
+  border-style: none;
+  padding-top: 20px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+.learn h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.learn {
+  background-color: #6F8695;
+  margin: 30px;
+}
