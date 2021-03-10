@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './DashboardRoute.css';
 import { Link } from 'react-router-dom';
+//import LanguageApiService from '.../'
 
 class DashboardRoute extends Component {
   render() {
@@ -10,7 +11,7 @@ class DashboardRoute extends Component {
         <Link to='/learn'>Start Practicing</Link>
         <h3>Words to Practice</h3>
         <p>(List showing each word to practice with a count for the number of times the user guessed it in/correctly.)</p><br /><br /><br />
-      
+        <p>{this.context.language}</p>
       </section>
     );
   }
