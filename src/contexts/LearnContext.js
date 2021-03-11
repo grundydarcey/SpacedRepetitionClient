@@ -91,9 +91,31 @@ export class LearnProvider extends Component {
     const value = {
       totalScore: this.state.totalScore,
       wordCorrectCount: this.state.wordCorrectCount,
-    }
+      wordIncorrectCount: this.state.wordIncorrectCount,
+      nextWord: this.state.nextWord,
+      guess: this.state.guess,
+      prevWord: this.state.prevWord,
+      isCorrect: this.state.isCorrect,
+      answer: this.state.answer,
+      error: this.state.error,
+      isResultDisplayed: this.state.isResultDisplayed,
+      setError: this.setError,
+      clearError: this.clearError,
+      setTotalScore: this.setTotalScore,
+      setWordCorrectCount: this.setWordCorrectCount,
+      setWordIncorrectCount: this.setWordIncorrectCount,
+      setNextWord: this.setNextWord,
+      setGuess: this.setGuess,
+      setPrevWord: this.setPrevWord,
+      setIsCorrect: this.setIsCorrect,
+      setAnswer: this.setAnswer,
+      reset: this.reset,
+      setIsResultDisplayed: this.setIsResultDisplayed,
+    };
     return (
-
+      <LearnContext.Provider value={value}>
+        {this.props.children}
+      </LearnContext.Provider>
     )
   }
 }
