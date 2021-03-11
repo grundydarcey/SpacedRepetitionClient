@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './LearningRoute.css';
 import LearnContext from '../../contexts/LearnContext';
 import LanguageApiService from '../../services/language-api-service';
-import Results from '../../components/Results/Results';
+import Results from '../../components/Results/results';
 class LearningRoute extends Component {
   static contextType = LearnContext;
 
