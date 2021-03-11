@@ -1,4 +1,3 @@
-
 let _timeoutId
 let _idleCallback = null
 let _notIdleEvents = [
@@ -7,7 +6,7 @@ let _notIdleEvents = [
   'keypress',
   'scroll',
   'touchstart',
-]
+];
 const _FIVE_MINUTES_IN_MS = 5 * 60 * 1000
 
 const IdleService = {
@@ -39,4 +38,4 @@ const IdleService = {
   },
 }
 
-export default IdleService
+export default IdleService;
