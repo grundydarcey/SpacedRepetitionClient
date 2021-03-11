@@ -13,22 +13,19 @@ const UserContext = React.createContext({
   processLogout: () => {},
 })
 
-export default UserContext
+export default UserContext;
 
 export class UserProvider extends Component {
   constructor(props) {
     super(props)
     const state = { user: {}, error: null }
-
     const jwtPayload = TokenService.parseAuthToken()
-
     if (jwtPayload)
       state.user = {
         id: jwtPayload.user_id,
         name: jwtPayload.name,
         username: jwtPayload.sub,
       }
-
     this.state = state;
     IdleService.setIdleCallback(this.logoutBecauseIdle)
   }
