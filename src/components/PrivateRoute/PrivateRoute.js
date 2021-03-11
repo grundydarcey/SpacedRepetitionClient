@@ -4,7 +4,7 @@ import UserContext from '../../contexts/UserContext';
 import './PrivateRoute.css';
 
 export default function PrivateRoute({ component, ...props }) {
-  const Component = component
+  const Component = component;
   return (
     <Route
       {...props}
