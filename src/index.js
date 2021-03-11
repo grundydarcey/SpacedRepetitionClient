@@ -9,6 +9,7 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { LearnProvider } from './contexts/LearnContext';
+import 'unfetch/polyfill';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -23,4 +24,4 @@ ReactDOM.render(
   document.getElementById('root'),
 )
 
-serviceWorker.unregister()
+serviceWorker.unregister();
