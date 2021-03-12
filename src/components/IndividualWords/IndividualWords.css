@@ -1,15 +1,26 @@
 .practiceWords {
-  list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  padding-left: 0px;
+  list-style-type: none;
 }
 
 .practiceWordCard {
-  flex-basis: 2;
   border-style: solid;
   border-color: #000;
   border-width: 5px;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 5px;
 }
 
 .pwcorrect, .pwIncorrect, .practiceWords h4 {
