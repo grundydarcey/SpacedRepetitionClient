@@ -28,4 +28,4 @@ class LoginRoute extends Component {
   }
 }
 
-export default LoginRoute
+export default LoginRoute;

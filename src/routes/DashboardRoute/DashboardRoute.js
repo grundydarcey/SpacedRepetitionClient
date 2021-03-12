@@ -19,7 +19,6 @@ class DashboardRoute extends Component {
   }
 
   render() {
-    
     return (
       <section className='beginPractice'>
         <h2>{this.context.language.name}</h2>
@@ -33,4 +32,4 @@ class DashboardRoute extends Component {
   }
 }
 
-export default DashboardRoute
+export default DashboardRoute;
