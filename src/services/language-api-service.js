@@ -7,7 +7,8 @@ const LanguageApiService = {
     return fetch(`${config.API_ENDPOINT}/language`, {
       method: 'GET',
       headers: {
-        'authorization': `Bearer ${TokenService.getAuthToken()}`,
+        Authorization: `Bearer ${TokenService.getAuthToken()}`,
+       // 'Content-Type': 'application/json',
       },
     })
     .then(res =>
@@ -21,7 +22,7 @@ const LanguageApiService = {
     return fetch(`${config.API_ENDPOINT}/language/head`, {
       method: 'GET',
       headers: {
-        'authorization': `Bearer ${TokenService.getAuthToken()}`,
+        authorization: `Bearer ${TokenService.getAuthToken()}`,
       },
     })
     .then((res) =>
@@ -37,7 +38,7 @@ const LanguageApiService = {
     return fetch(`${config.API_ENDPOINT}/language/guess`, {
       method: 'POST',
       headers: {
-        'authorization': `Bearer ${TokenService.getAuthToken()}`,
+        authorization: `Bearer ${TokenService.getAuthToken()}`,
         'Content-Type': 'application/json',
       },
       body: body,
@@ -50,10 +51,8 @@ const LanguageApiService = {
         );
         res.json().then((e) => Promise.reject(e));
       }
-      
      // console.log(res.json())
       return res.json();
-      
     })
     .catch((e) => console.error(e));
   },
