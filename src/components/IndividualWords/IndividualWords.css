@@ -1,3 +1,17 @@
 .practiceWords {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.practiceWordCard {
+  flex-basis: 2;
+}
+
+.pwcorrect, .pwIncorrect, .practiceWords h4 {
+  font-family: Nurom;
+}
+
+.practiceWords h4 {
+  font-size: 25px;
 }

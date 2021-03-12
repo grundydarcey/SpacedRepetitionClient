@@ -1,3 +1,7 @@
 .beginPractice {
   text-align: center;
 }
+
+.beginPractice h2, .beginPractice a, .beginPractice h3, .beginPractice p {
+  font-family: Nurom;
+}
