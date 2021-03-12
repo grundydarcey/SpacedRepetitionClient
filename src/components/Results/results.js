@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import LearnContext from '../../contexts/LearnContext';
-import './ResultCard.css';
+import './results.css';
 
 export default class Results extends Component {
   static contextType = LearnContext;

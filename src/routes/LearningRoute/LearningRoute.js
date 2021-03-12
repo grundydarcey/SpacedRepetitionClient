@@ -3,6 +3,7 @@ import './LearningRoute.css';
 import LearnContext from '../../contexts/LearnContext';
 import LanguageApiService from '../../services/language-api-service';
 import Results from '../../components/Results/results';
+
 class LearningRoute extends Component {
   static contextType = LearnContext;
 
@@ -44,11 +45,12 @@ class LearningRoute extends Component {
       this.context.setGuess(guess);
       this.context.setIsCorrect(res.isCorrect);
       this.context.setIsResultDisplayed(true);
-
     })
   }
 
   render() {
+    console.log(this.context, 'thiscontext')
+    console.log(this.context.nextWord, 'nextword')
     return (
       <section className='mainpage'>
         <section className='learn'>
@@ -87,37 +89,6 @@ class LearningRoute extends Component {
       </section>     
     )
   }
-
-  // render() {
-  //   const arr = [1, 2]
-  //   const correctOrIncorrect = (arr.length === 2) ? (
-  //     <p>Make a guess.</p>
-  //   ) : (
-  //     <section className='incorrectguessresponse'>
-  //       <h3>Good try, but not quite right :(</h3>
-  //       <p>The correct translation for --- was --- and you chose ---.</p>
-  //       <button type='button' className='nextWord'>Try another word!</button>
-  //     </section>
-  //   )
-
-  //   return (
-  //     <section className='learn'>
-  //       <h2>Translate the word: </h2>
-  //       <form>
-  //         <legend>Guess below</legend>
-  //         <fieldset>
-  //         <label htmlFor='yourGuess' id='yourGuess'>What's the translation for this word?</label>
-  //         <input type='text' id='yourGuess'></input><br />
-  //         <button type='submit' className='submit'>Submit your Answer</button><br /><br />
-  //         {correctOrIncorrect}
-  //         <p>You have answered this word correctly -- times.<br />
-  //         You have answered this word incorrectly -- times.<br /><br />
-  //         Your total score is: --</p>
-  //         </fieldset>
-  //       </form>
-  //     </section>
-  //   );
-  // }
 }
 
 export default LearningRoute;

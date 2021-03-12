@@ -48,7 +48,6 @@ export class LearnProvider extends Component {
     this.setState({ totalScore })
   };
 
-
   setWordCorrectCount = (wordCorrectCount) => {
     this.setState({ wordCorrectCount });
   };

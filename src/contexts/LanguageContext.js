@@ -30,7 +30,6 @@ export class LanguageProvider extends Component {
     this.setState({ error: null });
   };
 
-
   setLanguage = (language) => {
     this.setState({ language })
   }

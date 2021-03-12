@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import './IndividualWords.css';
 
 export default class IndividualWords extends Component {

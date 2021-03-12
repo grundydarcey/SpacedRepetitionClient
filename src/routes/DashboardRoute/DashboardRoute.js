@@ -19,12 +19,12 @@ class DashboardRoute extends Component {
   }
 
   render() {
+    
     return (
       <section className='beginPractice'>
         <h2>{this.context.language.name}</h2>
         <Link to='/learn'>Start Practicing</Link>
         <h3>Words to Practice</h3>
-        <p>(List showing each word to practice with a count for the number of times the user guessed it in/correctly.)</p>
         <p>Total Correct Answers: {this.context.language.total_score}</p>
         <h3 className='practiceWordTitle'>Words to Practice</h3>
         <IndividualWords words={this.context.words} />
