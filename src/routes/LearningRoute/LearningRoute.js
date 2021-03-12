@@ -60,7 +60,7 @@ class LearningRoute extends Component {
                 <h2>Translate the Word:</h2>
                 <span className='word'>{this.context.nextWord}</span>
               </section>
-              <form className='translateForm' onSubmit={(e) => this.handleSubmit(e)}>
+              <form className='translateForm' onSubmit={(e) => this.handleSubmit(e)}><br /><br />
                 <label htmlFor='learninput' className='translatelabel'>
                   What is this word in English?
                 </label>

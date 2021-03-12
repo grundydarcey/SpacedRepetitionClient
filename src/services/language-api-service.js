@@ -23,7 +23,8 @@ const LanguageApiService = {
       headers: {
         'authorization': `Bearer ${TokenService.getAuthToken()}`,
       },
-    }).then((res) =>
+    })
+    .then((res) =>
       !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json()
     );
   },
@@ -37,7 +38,7 @@ const LanguageApiService = {
       method: 'POST',
       headers: {
         'authorization': `Bearer ${TokenService.getAuthToken()}`,
-        'content-type': 'application/json',
+        'Content-Type': 'application/json',
       },
       body: body,
     })

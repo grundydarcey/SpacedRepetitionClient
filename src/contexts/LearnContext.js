@@ -34,18 +34,18 @@ export class LearnProvider extends Component {
   state = {
     ...starterState,
   };
-  
+
   setError = (error) => {
     console.error(error);
     this.setState({ error });
   };
 
   clearError = () => {
-    this.setState({ error: null })
+    this.setState({ error: null });
   };
 
   setTotalScore = (totalScore) => {
-    this.setState({ totalScore })
+    this.setState({ totalScore });
   };
 
   setWordCorrectCount = (wordCorrectCount) => {
@@ -57,33 +57,33 @@ export class LearnProvider extends Component {
   };
 
   setNextWord = (nextWord) => {
-    this.setState({ nextWord })
+    this.setState({ nextWord });
   };
 
   setGuess = (guess) => {
     this.setState({ guess });
-  }
+  };
 
   setPrevWord = (prevWord) => {
-    this.setState({ prevWord })
+    this.setState({ prevWord });
   };
 
   setIsCorrect = (isCorrect) => {
-    this.setState({ isCorrect })
+    this.setState({ isCorrect });
   };
 
   setAnswer = (answer) => {
-    this.setState({ answer })
+    this.setState({ answer });
   };
 
   reset = () => {
     this.setState({
       ...starterState,
-    })
+    });
   };
 
   setIsResultDisplayed = (bool) => {
-    this.setState({ isResultDisplayed: bool })
+    this.setState({ isResultDisplayed: bool });
   };
 
   render() {
@@ -115,6 +115,6 @@ export class LearnProvider extends Component {
       <LearnContext.Provider value={value}>
         {this.props.children}
       </LearnContext.Provider>
-    )
+    );
   }
 }

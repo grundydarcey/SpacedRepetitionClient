@@ -1,18 +1,18 @@
-fieldset {
-  border-style: none;
-  padding-top: 20px;
-}
-
-legend {
-  font-weight: bold;
-}
-
-.learn h2 {
+.word {
   text-align: center;
-  padding-top: 20px;
+}
+
+.translateTitle {
+  text-align: center;
+  padding-top: 15px;
 }
 
 .learn {
   background-color: #6F8695;
   margin: 30px;
+}
+
+.score p {
+  text-align: center;
+  padding-bottom: 20px;
 }
