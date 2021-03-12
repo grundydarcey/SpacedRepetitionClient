@@ -43,13 +43,17 @@ const LanguageApiService = {
       body: body,
     })
     .then((res) => {
+      console.log(body)
       if (!res.ok) {
         LearnContext.setError(
           'Something went wrong, please refresh and try again.'
         );
         res.json().then((e) => Promise.reject(e));
       }
+      
+     // console.log(res.json())
       return res.json();
+      
     })
     .catch((e) => console.error(e));
   },
