@@ -57,16 +57,16 @@ class LearningRoute extends Component {
           {!this.context.isResultDisplayed ? (
             <section className='translateForm'>
               <section className='translateTitle'>
-                <h2>Translate the Word:</h2>
+                <h2>Translate the word:</h2>
                 <span className='word'>{this.context.nextWord}</span>
               </section>
               <form className='translateForm' onSubmit={(e) => this.handleSubmit(e)}><br /><br />
-                <label htmlFor='learninput' className='translatelabel'>
-                  What is this word in English?
+                <label htmlFor='learn-guess-input' className='translatelabel'>
+                What's the translation for this word?
                 </label>
-                <input type='text' name='learninput' id='learninput' className='input' onChange={this.handleOnChange} required></input>
+                <input type='text' name='learn-guess-input' id='learn-guess-input' className='input' onChange={this.handleOnChange} required></input>
                 <button type='submit' className='guessbutton'>
-                  Submit your Guess
+                  Submit your answer
                 </button>
               </form>
             </section>
