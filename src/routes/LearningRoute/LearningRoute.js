@@ -72,17 +72,17 @@ class LearningRoute extends Component {
           ) : (
             <Results />
           )}
-          <div className='score'>
-            <div className='displayScore'>
+          <section className='score'>
+            <section className='displayScore'>
               <p>Your total score is: {this.context.totalScore}</p>
-            </div>
+            </section>
             <p>You have answered this word correctly{' '}
               {this.context.wordCorrectCount} times.
             </p>
             <p>You have answered this word incorrectly{' '}
               {this.context.wordIncorrectCount} times.
             </p>
-          </div>  
+          </section>  
         </section>
       </section>     
     )

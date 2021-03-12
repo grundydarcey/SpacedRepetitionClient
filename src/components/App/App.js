@@ -21,7 +21,7 @@ export default class App extends Component {
   render() {
     const { hasError } = this.state
     return (
-      <div className='App'>
+      <section className='App'>
         <Header />
         <main>
           {hasError && (
@@ -50,7 +50,7 @@ export default class App extends Component {
             />
           </Switch>
         </main>
-      </div>
+      </section>
     );
   }
 }

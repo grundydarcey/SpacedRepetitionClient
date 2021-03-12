@@ -21,15 +21,15 @@ export default class Results extends Component {
     
   render() {
     return (
-      <div className='feedback'>
+      <section className='feedback'>
         {this.renderMessage()}
-        <div className='display'>
+        <section className='display'>
           <p>The correct translation for <span en='it'>{this.context.prevWord}</span> was {this.context.answer} and you chose {this.context.guess}!</p>
-        </div>
+        </section>
         <button className='tryAgain' onClick={this.handleClick}>
           Try another word!
         </button>
-      </div>
+      </section>
     );
   }
 }
