@@ -15,4 +15,9 @@
 .score p {
   text-align: center;
   padding-bottom: 20px;
+  font-family: Nurom;
+}
+
+.word, .translateTitle, .translatelabel {
+  font-family: Nurom;
 }

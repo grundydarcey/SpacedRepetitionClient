@@ -1,5 +1,11 @@
+@font-face {
+  font-family: 'Nurom';
+  src: url('../Fonts/nurom-bold-webfont.woff');
+}
+
 h1 {
   text-align: center;
+  font-family: Nurom;
 }
 
 h1 a:visited {
@@ -18,6 +24,7 @@ h1 a {
 
 .name, .logout {
   margin-right: 20px;
+  font-family: Nurom;
 }
 
 .loginSignup {
@@ -28,4 +35,8 @@ h1 a {
   background-color: #f5ccff;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.nameLogout a, .loginSignup {
+  font-family: Nurom;
 }

@@ -2,6 +2,15 @@
   text-align: center;
 }
 
-.tryAgain {
+.tryAgain, .feedback {
   text-align: center;
+}
+
+.display {
+  text-align: center;
+  font-family: Nurom;
+}
+
+.resultTitleWrong {
+  padding-top: 25px;
 }
