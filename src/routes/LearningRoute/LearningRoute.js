@@ -19,8 +19,6 @@ class LearningRoute extends Component {
           throw new Error('Next word not found');
         }
         this.context.setNextWord(data.nextWord);
-        console.log(data.nextWord)
-        console.log(data)
         this.context.setTotalScore(data.totalScore);
         this.context.setWordCorrectCount(data.wordCorrectCount);
         this.context.setWordIncorrectCount(data.wordIncorrectCount);
@@ -36,7 +34,6 @@ class LearningRoute extends Component {
   handleSubmit(e) {
     e.preventDefault();
     const guess = this.state.guess;
-    console.log(this.state.guess)
     LanguageApiService.submitGuess(guess).then((res) => {
       this.context.setPrevWord(this.context.nextWord);
       this.context.clearError();
@@ -45,12 +42,8 @@ class LearningRoute extends Component {
       this.context.setWordIncorrectCount(res.wordIncorrectCount);
       this.context.setNextWord(res.nextWord);
       this.context.setAnswer(res.answer);
-      console.log(res.answer)
       this.context.setGuess(guess);
-      console.log(guess)
-      console.log(res.guess)
       this.context.setIsCorrect(res.isCorrect);
-      console.log(res.isCorrect)
       this.context.setIsResultDisplayed(true);
     })
   }
