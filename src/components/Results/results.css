@@ -1,5 +1,6 @@
 .resultTitleCorrect, .resultTitleWrong {
   text-align: center;
+  padding-top: 20px;
 }
 
 .tryAgain, .feedback {

@@ -6,6 +6,10 @@
 
 .practiceWordCard {
   flex-basis: 2;
+  border-style: solid;
+  border-color: #000;
+  border-width: 5px;
+  padding: 10px;
 }
 
 .pwcorrect, .pwIncorrect, .practiceWords h4 {

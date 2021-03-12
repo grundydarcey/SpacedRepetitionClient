@@ -19,6 +19,8 @@ class LearningRoute extends Component {
           throw new Error('Next word not found');
         }
         this.context.setNextWord(data.nextWord);
+        console.log(data.nextWord)
+        console.log(data)
         this.context.setTotalScore(data.totalScore);
         this.context.setWordCorrectCount(data.wordCorrectCount);
         this.context.setWordIncorrectCount(data.wordIncorrectCount);
@@ -66,7 +68,7 @@ class LearningRoute extends Component {
               <form className='translateForm' onSubmit={(e) => this.handleSubmit(e)}><br /><br />
                 <label htmlFor='learn-guess-input' className='translatelabel'>
                 What's the translation for this word?
-                </label>
+                </label><br /><br />
                 <input type='text' name='learn-guess-input' id='learn-guess-input' className='input' onChange={this.handleOnChange} required></input>
                 <button type='submit' className='guessbutton'>
                   Submit your answer
